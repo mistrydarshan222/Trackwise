@@ -31,6 +31,7 @@ router.get('/summary', async (req, res) => {
   } catch (error) {
     console.error('Error fetching dashboard summary:', error);
     res.status(500).json({ error: 'Failed to fetch dashboard summary' });
+    
   }
 });
 
